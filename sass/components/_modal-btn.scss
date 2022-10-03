@@ -1,0 +1,51 @@
+.modal-button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: fill var(--anim-slow);
+
+    &:hover,
+    &:focus {
+        fill: var(--btn-hero-cl);
+    }
+}
+
+
+.modal-button {
+    margin: 0 auto;
+    display: block;
+    width: 216px;
+    min-height: 50px;
+    padding: 6px 28px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--light-txt-cl);
+    background-color: var(--btn-hero-cl);
+    cursor: pointer;
+    transition: background-color var(--anim-slow);
+
+    &:hover,
+    &:focus {
+        background-color: var(--bnt-act-cl);
+    }
+    
+    &:active {
+        background-color: var(--bnt-act-cl);
+    }
+}

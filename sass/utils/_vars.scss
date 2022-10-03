@@ -1,0 +1,41 @@
+:root {
+    /* Fonts */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /* Text colors */
+    --main-txt-cl: #212121;
+    --second-txt-cl: #757575;
+    --light-txt-cl: #ffffff;
+    --accent-txt-cl: #2196f3;
+    --logo-first-txt-cl: #2196f3;
+    --logo-second-txt-cl: #000000;
+    --logo-second-alt-txt-cl: #ffffff;
+    --light-txt-cl-60: rgba(255, 255, 255, 0.6);
+
+    /* Background colors */
+    --accent-bg-cl: #f5f5f5;
+    --main-bg-cl: #ffffff;
+    --second-bg-cl: #2f303a;
+    --btn-filter-bg-cl: #f5f4fa;
+    --btn-filter-act-cl: #2196f3;
+    --btn-hero-cl: #2196f3;
+    --bnt-act-cl: #188ce8;
+    --team-bg-cl: #f5f4fa;
+    --footer-icon-bg-cl: rgba(255, 255, 255, 0.1);
+
+    /* Others */
+    --icon-clients: #AFB1B8;
+    --footer-icon-clients: #FFFFFF;
+    --anim-slow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+    background-color: var(--main-bg-cl);
+}
