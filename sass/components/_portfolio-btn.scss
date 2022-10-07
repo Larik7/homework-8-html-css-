@@ -1,9 +1,22 @@
 .filter-list {
     display: flex;
-    gap: 8px;
-    margin-bottom: 50px;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    margin-bottom: 40px;
+    max-width: 419px;
+    @media screen and (min-width: 768px) {
+        max-width: 738px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        max-width: 1170px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio-button {
