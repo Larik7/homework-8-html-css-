@@ -50,6 +50,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -330,7 +332,7 @@ img {
   border: none;
   cursor: pointer;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
   }
@@ -338,6 +340,13 @@ img {
 
 .menu-container {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
@@ -362,6 +371,14 @@ img {
   right: 25px;
 }
 
+.mobile-menu {
+  margin-bottom: auto;
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
 .mobile-socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,12 +391,18 @@ img {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-background.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../..//images/hero-background_sm-@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../..//images/hero-background_sm-@1x.jpg);
   background-color: var(--second-bg-cl);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../..//images/hero-background_sm-@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../..//images/hero-background_sm-@2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
