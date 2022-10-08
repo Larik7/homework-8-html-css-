@@ -4,12 +4,15 @@
 }
 
 .header-nav {
+    display: none;
     @media screen and (min-width: 768px) {
+        display: flex;
         margin-left: 88px;
         margin-right: auto;
     }
         
     @media screen and (min-width: 1200px) {
+        display: flex;
         margin-left: 93px;
         margin-right: auto;
     }
@@ -45,6 +48,8 @@
 }
 
 .contacts-nav {
+display: none;
+
     @media screen and (min-width: 768px) {
         padding-top: 21px;
         padding-bottom: 21px;

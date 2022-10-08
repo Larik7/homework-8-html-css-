@@ -113,14 +113,23 @@ img {
           align-items: center;
 }
 
+.header-nav {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 88px;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 93px;
     margin-right: auto;
   }
@@ -157,6 +166,9 @@ img {
   color: var(--accent-txt-cl);
 }
 
+.contacts-nav {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .contacts-nav {
     padding-top: 21px;
@@ -298,6 +310,62 @@ img {
     font-size: 26px;
     line-height: 1.1923076923;
   }
+}
+
+.menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 767px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 40px;
+  background-color: #fff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.mobile-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero {
@@ -472,6 +540,15 @@ img {
 
 .features__text {
   color: var(--second-txt-cl);
+}
+
+.about {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+  }
 }
 
 .about__title {
