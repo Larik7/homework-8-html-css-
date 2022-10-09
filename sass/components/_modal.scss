@@ -22,10 +22,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 530px;
-    background-color: #ffffff;
+    
+    background-color: var(--main-bg-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (max-width: 479px) {
+         width: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 530px;
+    }
 }
 
 .feedback-form-title {
@@ -33,9 +45,14 @@
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     color: var(--main-txt-cl);
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        line-height: calc(23 / 20);
+    }
 }
 
 .feedback-form-group {
@@ -97,6 +114,16 @@
     margin-bottom: 30px;
 }
 
+.feedback-form-description {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
+}
+
 .feedback-user-comment {
     display: block;
     width: 100%;
@@ -148,14 +175,20 @@
 
 .feedback-form-link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color: var(--accent-txt-cl);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
 }
 
 .feedback-checkbox-icon {
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     top: 5px;
     left: 10px;
 }

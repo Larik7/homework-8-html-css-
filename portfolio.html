@@ -54,6 +54,16 @@
             </li>
           </ul>
         </div>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-icons" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -581,5 +591,84 @@
         </div>
       </div>
     </footer>
+    <!-- menu mobile -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-nav">
+          <a class="mobile-link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-nav">
+          <a class="mobile-link link current" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-nav">
+          <a class="mobile-link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a class="mob-con-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mob-con-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link link"
+            href="https://instagram.com"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link link"
+            href="https://twitter.com"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link link"
+            href="https://facebook.com"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link link"
+            href="https://linkedin.com"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
