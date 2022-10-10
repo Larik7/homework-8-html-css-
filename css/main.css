@@ -424,10 +424,16 @@ img {
 
 .mob-con-tel {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 26px;
+  line-height: 1.1538461538;
   letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
+}
+@media screen and (min-width: 380px) {
+  .mob-con-tel {
+    font-size: 34px;
+    line-height: 1.1764705882;
+  }
 }
 
 .mobile-contacts-item:not(:last-child) {
