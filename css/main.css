@@ -1527,6 +1527,11 @@ img {
           justify-content: center;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 450px) {
+  .feedback-form-agreement {
+    padding-left: 20px;
+  }
+}
 
 .feedback-form-description {
   font-size: 12px;
@@ -1629,9 +1634,14 @@ img {
 }
 
 .feedback-checkbox-icon {
-  position: fixed;
-  top: 5px;
-  left: 10px;
+  position: absolute;
+  bottom: 0.5px;
+  left: 0.5px;
+}
+@media screen and (min-width: 1200px) {
+  .feedback-checkbox-icon {
+    bottom: 5px;
+  }
 }
 
 .modal-button-close {

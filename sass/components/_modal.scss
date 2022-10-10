@@ -112,6 +112,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 450px) {
+        padding-left: 20px;
+        // padding-right: 20px;
+    }
 }
 
 .feedback-form-description {
@@ -187,8 +192,11 @@
 }
 
 .feedback-checkbox-icon {
-    // position: absolute;
-    position: fixed;
-    top: 5px;
-    left: 10px;
+    position: absolute;
+    bottom: 0.5px;
+    left: 0.5px;
+
+    @media screen and (min-width: 1200px) {
+        bottom: 5px;
+    }
 }
