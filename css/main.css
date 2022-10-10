@@ -1424,7 +1424,7 @@ img {
 
 .modal {
   position: absolute;
-  padding: 40px;
+  padding: 30px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1442,11 +1442,13 @@ img {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    padding: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 530px;
+    padding: 40px;
   }
 }
 
@@ -1625,6 +1627,16 @@ img {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
+}
+@media screen and (max-width: 420px) {
+  .feedback-form-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .feedback-form-link {

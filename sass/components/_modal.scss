@@ -18,7 +18,7 @@
 
 .modal {
     position: absolute;
-    padding: 40px;
+    padding: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -33,10 +33,12 @@
 
     @media screen and (min-width: 480px) {
         width: 450px;
+        padding: 40px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 530px;
+        padding: 40px;
     }
 }
 
@@ -115,7 +117,6 @@
 
     @media screen and (max-width: 450px) {
         padding-left: 20px;
-        // padding-right: 20px;
     }
 }
 
@@ -184,6 +185,11 @@
     line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color: var(--accent-txt-cl);
+
+    @media screen and (max-width: 420px) {
+        display: flex;
+        justify-content: center;
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
